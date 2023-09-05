@@ -1,9 +1,6 @@
 function contar(cant) {
-  if(cant == ""){
-    return 0;
-  }
-  else
-    return 1;
+  cant = cant.replace(/[^a-zA-Z]/g, '');
+  return cant.length;
 }
 
 export default contar;
